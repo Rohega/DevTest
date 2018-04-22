@@ -13,4 +13,23 @@ ActiveAdmin.register Company do
 # end
   permit_params :name, :rfc
 
+  index do
+    column :name
+    column "Rfc", sortable: :rfc do |company|
+    	company.rfc
+    end
+    actions
+  end
+
+ form name: 'A custom name' do |f|
+    inputs 'Company data' do
+      input :name
+      input :rfc
+    end
+
+    panel 'Markup' do
+      "The following can be used in the content below..."
+    end
+    actions
+  end
 end

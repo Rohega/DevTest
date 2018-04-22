@@ -13,4 +13,24 @@ ActiveAdmin.register User do
 # end
   permit_params :email, :password, :password_confirmation
 
+  index do
+    column :email
+    column "Email", sortable: :email do |user|
+    	user.email
+    end
+    actions
+  end
+
+ form email: 'A custom email' do |f|
+    inputs 'Company data' do
+      input :email
+      input :password
+      input :password_confirmation
+    end
+
+    panel 'Markup' do
+      "The following can be used in the content below..."
+    end
+    actions
+  end
 end
