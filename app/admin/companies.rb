@@ -25,6 +25,7 @@ ActiveAdmin.register Company do
     inputs 'Company data' do
       input :name
       input :rfc
+      input :address
     end
 
     panel 'Markup' do

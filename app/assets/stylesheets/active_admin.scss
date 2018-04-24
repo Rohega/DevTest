@@ -15,3 +15,47 @@
 // For example, to change the default status-tag color:
 //
 //   .status_tag { background: #6090DB; }
+
+
+
+/*Reset Styles Default Active Admin*/
+
+//Header
+#header{
+    background-color: rgb(25, 50, 89) !important;
+    background-image: none;
+    border-bottom: 1px solid #44484b;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+    text-shadow: #000 0 1px 0;
+    display: table;
+    height: 20px;
+    width: 100%;
+    overflow: visible;
+    position: inherit;
+    padding: 5px 0;
+    z-index: 900;
+}
+
+
+.blank_slate{
+    //background-color: blue;
+}
+
+
+#header ul.tabs > li a {
+    text-decoration: none;
+    padding: 12px 10px 15px 10px;
+    position: relative;
+    border-radius: 0px;
+
+}
+
+#header ul.tabs > li.current > a{
+    color:#FFFFFF;
+    background-color: #000000;
+}
+
+#header ul.tabs > li > a:hover{
+    color:#FFFFFF;
+    background-color:rgb(163, 18, 13);
+}

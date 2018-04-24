@@ -21,12 +21,14 @@ ActiveAdmin.register User do
     actions
   end
 
+
  form email: 'A custom email' do |f|
     inputs 'Company data' do
       input :email
       input :password
       input :password_confirmation
     end
+
 
     panel 'Markup' do
       "The following can be used in the content below..."
