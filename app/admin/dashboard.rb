@@ -6,7 +6,7 @@ ActiveAdmin.register_page "Dashboard" do
     div class: "blank_slate_container", id: "dashboard_default_message" do
       span class: "blank_slate" do
         span 'Bienvenido'
-        small 'Sistema Rayzen Software de Facturación Facil.'
+        small 'Rayzen Software de Facturación Facil.'
       end
     end
 
