@@ -37,4 +37,13 @@ ActiveAdmin.register Company do
   action_item :view, only: :index do
     link_to 'Importar empresas', import_form_path
   end
+
+
+  controller do
+    def import_xls
+      super do |format|
+        redirect_to collection_url and return if resource.valid?
+      end
+    end
+  end
 end

@@ -70,7 +70,12 @@ class CompaniesController < ApplicationController
   def import_xls
     Company.import(params[:file])
 
-    redirect_to companies_url, notice: 'Companies was successfully imported.'
+    redirect_to admin_companies_path, notice: 'Companies was successfully imported.'
+  end
+
+  # GET /companies/import_layout
+  def import_layout
+    
   end
 
   private
