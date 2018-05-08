@@ -64,3 +64,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #Added gems
 gem 'devise'
 gem 'activeadmin'
+gem 'permalink', '~> 2.0'
+gem 'importex'
+gem 'roo'

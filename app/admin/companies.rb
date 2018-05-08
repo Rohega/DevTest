@@ -11,7 +11,7 @@ ActiveAdmin.register Company do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-  permit_params :name, :rfc
+  permit_params :name, :rfc, :subdomain, :address
 
   index do
     column :name
@@ -32,5 +32,9 @@ ActiveAdmin.register Company do
       "The following can be used in the content below..."
     end
     actions
+  end
+
+  action_item :view, only: :index do
+    link_to 'Importar empresas', import_form_path
   end
 end
